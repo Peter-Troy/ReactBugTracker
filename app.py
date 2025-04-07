@@ -6,7 +6,7 @@ from flask_cors import cross_origin
 app = Flask(__name__)
 
 # Enable CORS for all routes in the app
-CORS(app, resources={r"/*": {"origins": "https://your-flask-app.onrender.com/bugs"}})
+CORS(app, resources={r"/*": {"origins": "https://bugtracker-d0jq.onrender.com/bugs"}})
 
 
 
