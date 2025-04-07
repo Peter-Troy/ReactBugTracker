@@ -24,7 +24,7 @@ function SubmitBug() {
     };
 
     try {
-      await axios.post("http://127.0.0.1:5000/bugs", newBug); // Send the bug data to backend
+      await axios.post("https://your-flask-app.onrender.com/bugs", newBug); // Send the bug data to backend
       console.log("Bug submitted successfully");
     } catch (error) {
       console.error("Error submitting bug:", error);
