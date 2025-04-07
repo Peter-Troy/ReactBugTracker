@@ -47,7 +47,7 @@ function ViewBugs() {
   
     try {
       // Make the PUT request to update the bug
-      await axios.put(`http://127.0.0.1:5000/bugs/${editingBug.id}`, updatedBug);
+      await axios.put(`https://your-flask-app.onrender.com/bugs/${editingBug.id}`, updatedBug);
       console.log("Bug updated successfully");
   
       // Update the bugs state to reflect the changes
@@ -66,7 +66,7 @@ function ViewBugs() {
   useEffect(() => {
     const fetchBugs = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:5000/bugs");
+        const response = await axios.get("https://your-flask-app.onrender.com/bugs");
         setBugs(response.data); // Update state with the fetched bugs
       } catch (error) {
         console.error("Error fetching bugs:", error);
@@ -82,7 +82,7 @@ function ViewBugs() {
   useEffect(() => {
     const fetchBugs = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:5000/bugs");
+        const response = await axios.get("https://your-flask-app.onrender.com/bugs");
         setBugs(response.data);  // Update state with the fetched bugs
       } catch (error) {
         console.error("Error fetching bugs:", error);
