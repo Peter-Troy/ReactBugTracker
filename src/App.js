@@ -34,3 +34,37 @@ function App() {
 }
 
 export default App;
+
+const styles = {
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    backgroundColor: "#f0f2f5",
+    fontFamily: "'Roboto', sans-serif",
+  },
+  headerContainer: {
+    marginBottom: "40px",
+  },
+  header: {
+    fontSize: "3rem",
+    color: "#333",
+    margin: 0,
+  },
+  buttonContainer: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  button: {
+    backgroundColor: "#007BFF",
+    color: "#fff",
+    border: "none",
+    padding: "15px 30px",
+    fontSize: "1.2rem",
+    borderRadius: "5px",
+    cursor: "pointer",
+    transition: "background-color 0.3s ease, transform 0.2s ease",
+  },
+};
