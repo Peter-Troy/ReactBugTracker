@@ -5,10 +5,18 @@ import SubmitBug from "./SubmitBug"; // Import the SubmitBug component
 
 function Home() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Bug Tracker</h1>
-      <Link to="/view-bugs"><button>View Bugs</button></Link>
-      <Link to="/submit-bug"><button style={{ marginLeft: "10px" }}>Submit Bug</button></Link>
+    <div style={styles.container}>
+      <div style={styles.headerContainer}>
+        <h1 style={styles.header}>Bug Tracker</h1>
+      </div>
+      <div style={styles.buttonContainer}>
+        <Link to="/view-bugs">
+          <button style={styles.button}>View Bugs</button>
+        </Link>
+        <Link to="/submit-bug">
+          <button style={{ ...styles.button, marginLeft: "15px" }}>Submit Bug</button>
+        </Link>
+      </div>
     </div>
   );
 }
