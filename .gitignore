@@ -21,3 +21,44 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore node_modules
+node_modules/
+
+# Ignore the venv (virtual environment) folder for Python projects
+venv/
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files (e.g., .env)
+.env
+
+# Ignore package-lock.json (optional for some workflows)
+package-lock.json
+
+# Ignore virtual environments
+venv/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore environment variables file
+.env
+
+# Ignore IDE-related files (optional)
+.vscode/
+.idea/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore build output directories
+build/
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
+.env
