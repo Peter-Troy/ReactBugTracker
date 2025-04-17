@@ -21,15 +21,15 @@ jobs:
           node-version: '18'
 
       - name: 📦 Install frontend dependencies
-        working-directory: ./frontend
+        working-directory: ./todolist
         run: npm install
 
       - name: 🧪 Run frontend tests
-        working-directory: ./frontend
+        working-directory: ./todolist
         run: npm test
 
       - name: 🏗️ Build frontend
-        working-directory: ./frontend
+        working-directory: ./todolist
         run: npm run build
 
       ## 🔧 Flask Backend Setup ##
@@ -39,7 +39,7 @@ jobs:
           python-version: '3.9.13'
 
       - name: 📦 Install backend dependencies
-        working-directory: ./backend
+        working-directory: ./todolist
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
